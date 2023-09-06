@@ -126,7 +126,7 @@ let femaleCharacters = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "female")
-    femaleCharacters.push(starWarsCharacters[i].gender);
+    femaleCharacters.push(starWarsCharacters[i].name);
 }
 
 console.log(femaleCharacters);
@@ -206,7 +206,7 @@ if (crewMass > 1000) {
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "n/a") {
-    starWarsCharacters.gender = "Robot";
+    starWarsCharacters[i].gender = "robot";
   }
 
   console.log(starWarsCharacters[i].gender);
